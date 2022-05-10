@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *::before,
@@ -9,8 +11,6 @@
 
 body {
   overflow: hidden;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(#151515 60%, #301b3f);
   display: flex;
@@ -22,7 +22,7 @@ body {
 /* === === Falling stars animation === === */
 
 section {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
