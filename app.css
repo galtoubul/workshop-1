@@ -213,6 +213,14 @@ span:nth-child(10) {
   padding: 1.25rem;
 }
 
+.input-first-three-rows:not(:placeholder-shown).input-first-three-rows:invalid {
+  border: 2px solid #ff3333;
+}
+.input-first-three-rows:not(:placeholder-shown).input-first-three-rows:invalid.input-first-three-rows:not(:focus)
+  ~ .form-label {
+  color: #ff3333;
+}
+
 .input-container {
   position: relative;
   width: 45%;
@@ -241,7 +249,12 @@ span:nth-child(10) {
 }
 
 .accept-terms {
-  justify-self: flex-start;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: #301b3f;
 }
 
 /* === === submit === === */

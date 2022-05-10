@@ -30,6 +30,9 @@
                 placeholder=" "
                 id="full-name"
                 autocomplete="off"
+                pattern="[A-Za-z ]*"
+                title="Letters and spaces only"
+                required
               />
               <label for="full-name" class="form-label">Full Name</label>
             </div>
@@ -40,6 +43,7 @@
                 placeholder=" "
                 id="email"
                 autocomplete="off"
+                required
               />
               <label for="email" class="form-label">Email</label>
             </div>
@@ -52,6 +56,9 @@
                 placeholder=" "
                 id="user-name"
                 autocomplete="off"
+                pattern="[A-Za-z0-9]{6,}"
+                title="Username must be at least 6 characters and without spaces"
+                required
               />
               <label for="user-name" class="form-label">Username</label>
             </div>
@@ -62,6 +69,9 @@
                 autocomplete="off"
                 type="password"
                 class="input-first-three-rows"
+                pattern=".{8,}"
+                title="Password must be at least 8 characters"
+                required
               />
               <label for="password" class="form-label">Password</label>
             </div>
@@ -74,6 +84,9 @@
                 autocomplete="off"
                 type="text"
                 class="input-first-three-rows"
+                pattern="([89]|[1-9][0-9]|1[01][0-9]|120)"
+                title="Legal age range: 8 - 120"
+                required
               />
               <label for="age" class="form-label">Age</label>
             </div>
@@ -84,6 +97,7 @@
                 autocomplete="off"
                 class="input-first-three-rows"
                 placeholder=" "
+                required
               />
               <datalist id="gender">
                 <option value="Male"></option>
@@ -94,13 +108,13 @@
             </div>
           </div>
           <div class="input-fields-row-container">
-            <input type="checkbox" class="accept-terms" />
+            <input type="checkbox" class="accept-terms" required />
             Accept terms and conditions
           </div>
         </div>
 
         <div class="submit-container">
-            <button class="glow-on-hover" type="button">SUBMIT</button>
+          <button class="glow-on-hover" type="submit">SUBMIT</button>
         </div>
       </form>
       <div class="side-img"></div>
