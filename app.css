@@ -19,7 +19,7 @@ body {
   height: 100vh;
 }
 
-/* === === Animation === === */
+/* === === Falling stars animation === === */
 
 section {
   position: relative;
@@ -164,7 +164,7 @@ span:nth-child(10) {
   justify-content: center;
   align-items: center;
   background-color: white;
-  color: #3C415C;
+  color: #3c415c;
 }
 
 .title-container {
@@ -177,7 +177,7 @@ span:nth-child(10) {
 
 .input-field-container {
   width: 100%;
-  height: 60%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,20 +186,54 @@ span:nth-child(10) {
 }
 
 .input-fields-row-container {
+  position: relative;
+  width: 75%;
+  height: calc(65% / 4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
-  height: calc(60% / 4);
 }
 
 .input-fields-row-container:nth-child(4) {
   justify-content: flex-start;
 }
 
-.input-first-three {
-  width: 45%;
+.input-first-three-rows {
+  width: 100%;
   height: 40px;
+  border-radius: 0.5rem;
+  background: none;
+  border: 2px solid #b4a5a5;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 1.25rem;
+}
+
+.input-container {
+  position: relative;
+  width: 45%;
+}
+
+.input-first-three:hover {
+  border-color: #301b3f;
+}
+
+.form-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: white;
+}
+
+.input-first-three-rows:focus ~ .form-label,
+.input-first-three-rows:not(:placeholder-shown).input-first-three-rows:not(:focus)
+  ~ .form-label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
 }
 
 .accept-terms {
@@ -211,7 +245,7 @@ span:nth-child(10) {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: 15%;
 }
 
 .side-img {

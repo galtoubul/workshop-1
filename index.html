@@ -23,21 +23,75 @@
 
         <div class="input-field-container">
           <div class="input-fields-row-container">
-            <input type="text" class="input-first-three" />
-            <input type="email" class="input-first-three" />
+            <div class="input-container">
+              <input
+                class="input-first-three-rows"
+                type="text"
+                placeholder=" "
+                id="full-name"
+                autocomplete="off"
+              />
+              <label for="full-name" class="form-label">Full Name</label>
+            </div>
+            <div class="input-container">
+              <input
+                type="email"
+                class="input-first-three-rows"
+                placeholder=" "
+                id="email"
+                autocomplete="off"
+              />
+              <label for="email" class="form-label">Email</label>
+            </div>
           </div>
           <div class="input-fields-row-container">
-            <input type="text" class="input-first-three" />
-            <input type="password" class="input-first-three" />
+            <div class="input-container">
+              <input
+                class="input-first-three-rows"
+                type="text"
+                placeholder=" "
+                id="user-name"
+                autocomplete="off"
+              />
+              <label for="user-name" class="form-label">Username</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="password"
+                placeholder=" "
+                autocomplete="off"
+                type="password"
+                class="input-first-three-rows"
+              />
+              <label for="password" class="form-label">Password</label>
+            </div>
           </div>
           <div class="input-fields-row-container">
-            <input type="text" class="input-first-three" />
-            <input list="gender" class="input-first-three" />
-            <datalist id="gender">
-              <option value="Male"></option>
-              <option value="Female"></option>
-              <option value="Don't want to answer"></option>
-            </datalist>
+            <div class="input-container">
+              <input
+                id="age"
+                placeholder=" "
+                autocomplete="off"
+                type="text"
+                class="input-first-three-rows"
+              />
+              <label for="age" class="form-label">Age</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="gender-input"
+                list="gender"
+                autocomplete="off"
+                class="input-first-three-rows"
+                placeholder=" "
+              />
+              <datalist id="gender">
+                <option value="Male"></option>
+                <option value="Female"></option>
+                <option value="Don't want to answer"></option>
+              </datalist>
+              <label for="gender-input" class="form-label">Gender</label>
+            </div>
           </div>
           <div class="input-fields-row-container">
             <input type="checkbox" class="accept-terms" />
