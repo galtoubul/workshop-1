@@ -154,6 +154,8 @@ span:nth-child(10) {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px #fff;
 }
 
 .form {
@@ -165,6 +167,8 @@ span:nth-child(10) {
   align-items: center;
   background-color: white;
   color: #3c415c;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .title-container {
@@ -333,6 +337,7 @@ span:nth-child(10) {
 .side-img {
   width: 30%;
   height: 100%;
+  border-radius: 0.5rem;
   background-image: url(./assets/astronaut.jpg);
   background-size: 100px 100px;
   background-repeat: repeat;
