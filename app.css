@@ -200,6 +200,8 @@ span:nth-child(10) {
 
 .input-fields-row-container:nth-child(4) {
   justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .input-first-three-rows {
@@ -343,6 +345,11 @@ input[type="checkbox"] {
   100% {
     background-position: 0 0;
   }
+}
+
+.required-note {
+  width: 100%;
+  font-size: 85%;
 }
 
 /* === === side image === === */
