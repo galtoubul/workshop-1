@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-
     <!-- Background animtion -->
     <section>
       <span></span><span></span><span></span><span></span><span></span
@@ -17,9 +16,40 @@
 
     <!-- Form -->
     <div class="form-container">
-      <form class="form"></form>
+      <form class="form">
+        <div class="title-container">
+          <h1>Registeration</h1>
+        </div>
+
+        <div class="input-field-container">
+          <div class="input-fields-row-container">
+            <input type="text" class="input-first-three" />
+            <input type="email" class="input-first-three" />
+          </div>
+          <div class="input-fields-row-container">
+            <input type="text" class="input-first-three" />
+            <input type="password" class="input-first-three" />
+          </div>
+          <div class="input-fields-row-container">
+            <input type="text" class="input-first-three" />
+            <input list="gender" class="input-first-three" />
+            <datalist id="gender">
+              <option value="Male"></option>
+              <option value="Female"></option>
+              <option value="Don't want to answer"></option>
+            </datalist>
+          </div>
+          <div class="input-fields-row-container">
+            <input type="checkbox" class="accept-terms" />
+            Accept terms and conditions
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button class="submit"></button>
+        </div>
+      </form>
       <div class="side-img"></div>
     </div>
-    
   </body>
 </html>
